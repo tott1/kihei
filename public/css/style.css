@@ -1,0 +1,206 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.footer {
+  position: relative;
+  padding: 120px 0 30px;
+  font-size: 75%;
+  text-align: center; }
+
+.gnav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 50px;
+  z-index: 1; }
+
+.gnav-menu {
+  position: fixed;
+  top: 0px;
+  left: -300px;
+  height: 100%;
+  width: 300px;
+  padding-top: 50px;
+  background-color: black; }
+
+.gnav-menu__button {
+  display: block;
+  padding: 0.5em 1.0em;
+  color: #ccc;
+  text-decoration: none; }
+
+.gnav-toggle {
+  position: absolute;
+  top: 0px;
+  margin: 15px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer; }
+
+.gnav-toggle__icon, .gnav-open__icon--n1, .gnav-open__icon--n2, .gnav-open__icon--n3 {
+  position: absolute;
+  background-color: #333;
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  left: 0px; }
+
+.gnav-open__icon--n1 {
+  -webkit-transform: rotate(0deg) translateY(-5px);
+          transform: rotate(0deg) translateY(-5px); }
+
+.gnav-open__icon--n2 {
+  -webkit-transform: rotate(0deg) translateY(0px);
+          transform: rotate(0deg) translateY(0px); }
+
+.gnav-open__icon--n3 {
+  -webkit-transform: rotate(0deg) translateY(5px);
+          transform: rotate(0deg) translateY(5px); }
+
+/*
+.gnav-close__icon--n1{
+  @extend .gnav-toggle__icon;
+  transform: rotate(405deg) translateY(0px);
+}
+
+.gnav-close__icon--n2{
+  @extend .gnav-toggle__icon;
+  transform: rotate(360deg) translateY(0px);
+}
+
+.gnav-close__icon--n3{
+  @extend .gnav-toggle__icon;
+  transform: rotate(135deg) translateY(0px);
+}
+*/
+.top-intro {
+  position: relative;
+  height: 500px;
+  background-color: #000; }
+
+.top-intro__bg {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  background-position: center; }
+
+.top-intro__logo {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #999;
+  background-position: center; }
+
+.top-copy, .top-bottles, .top-news, .top-brand {
+  width: 750px;
+  margin: 0 auto;
+  padding: 120px 0; }
+
+.top-copy__text, .top-brand__text {
+  margin: 120px 0;
+  font-size: 30px;
+  text-align: center; }
+
+.top-bottles {
+  padding: 60px 0;
+  background-color: #ccc; }
+
+.top-bottles-list {
+  overflow: hidden; }
+
+.top-bottles__item {
+  float: left;
+  margin-left: 50px;
+  margin-bottom: 45px; }
+
+.top-bottles-item__photo {
+  height: 180px;
+  width: 300px;
+  background-color: #999; }
+
+.top-bottles-item__class {
+  font-size: 87.5%; }
+
+.top-news {
+  padding: 60px 0;
+  background-color: #999; }
+
+.top-news-list {
+  overflow: hidden; }
+
+.top-news__item {
+  margin-left: 50px;
+  margin-bottom: 45px;
+  overflow: hidden; }
+
+.top-news-item__text {
+  width: 310px;
+  float: left; }
+
+.top-news-item__photo {
+  height: 180px;
+  width: 310px;
+  margin-left: 50px;
+  background-color: #ccc;
+  float: left; }
+
+.wrapper {
+  font-family: yugothic;
+  font-size: 16px;
+  line-height: 1.5;
+  min-width: 320px; }
+
+.global-btn {
+  margin: 1em auto;
+  padding: 10px 0;
+  width: 240px;
+  border: solid 2px #333;
+  text-align: center; }

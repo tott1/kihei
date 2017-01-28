@@ -1,0 +1,98 @@
+.top-intro{
+  position: relative;
+  height: 500px;
+  background-color: #000;
+}
+
+.top-intro__bg{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: $theme_black;
+  background-position: center;
+}
+
+.top-intro__logo{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: $theme_gray;
+  background-position: center;
+}
+
+.top-copy{
+  width: 750px;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+
+.top-copy__text{
+  margin: 120px 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+.top-bottles{
+  @extend .top-copy;
+  padding: 60px 0;
+  background-color: $theme_white;
+}
+
+.top-bottles-list{
+  overflow: hidden;
+}
+
+.top-bottles__item{
+  float: left;
+  margin-left: 50px;
+  margin-bottom: 45px;
+}
+
+.top-bottles-item__photo{
+  height: 180px;
+  width: 300px;
+  background-color: $theme_gray;
+}
+
+.top-bottles-item__class{
+  font-size: 87.5%;
+}
+
+.top-news{
+  @extend .top-copy;
+  padding: 60px 0;
+  background-color: $theme_gray;
+}
+
+.top-news-list{
+  overflow: hidden;
+}
+
+.top-news__item{
+  margin-left: 50px;
+  margin-bottom: 45px;
+  overflow: hidden;
+}
+
+.top-news-item__text{
+  width: 310px;
+  float: left;
+}
+
+.top-news-item__photo{
+  height: 180px;
+  width: 310px;
+  margin-left: 50px;
+  background-color: $theme_white;
+  float: left;
+}
+
+.top-brand{
+  @extend .top-copy;
+}
+
+.top-brand__text{
+  @extend .top-copy__text;
+}

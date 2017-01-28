@@ -1,5 +1,14 @@
 .wrapper {
-    font-family: sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
+  font-family: yugothic;
+  font-size: 16px;
+  line-height: 1.5;
+  min-width: 320px;
+}
+
+.global-btn{
+  margin: 1em auto;
+  padding: 10px 0;
+  width: 240px;
+  border: solid 2px $theme_black;
+  text-align: center;
 }
