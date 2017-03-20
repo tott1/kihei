@@ -1,98 +1,136 @@
 .top-intro{
   position: relative;
-  height: 500px;
-  background-color: #000;
+  background-color: $theme_bg;
 }
 
 .top-intro__bg{
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  background-color: $theme_black;
-  background-position: center;
+  height: 400px;
+  padding: 160px;
 }
 
 .top-intro__logo{
-  position: absolute;
-  top: 0px;
   width: 100%;
   height: 100%;
-  background-color: $theme_gray;
+  background-image: url("../img/logo.png");
+  background-size: contain;
   background-position: center;
+	background-repeat: no-repeat;
 }
 
 .top-copy{
-  width: 750px;
-  margin: 0 auto;
-  padding: 120px 0;
+  padding: 200px 0 90px;
+  background-image: url("../img/sake.jpg");
+  background-size: cover;;
+  background-position: center;
 }
 
 .top-copy__text{
-  margin: 120px 0;
+  margin-bottom: 90px;
   font-size: 30px;
+  font-family: $theme_serif;
   text-align: center;
 }
 
 .top-bottles{
-  @extend .top-copy;
-  padding: 60px 0;
-  background-color: $theme_white;
+  padding: 0 0 30px;
+  background: $theme_front;
 }
 
 .top-bottles-list{
+  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   overflow: hidden;
 }
 
 .top-bottles__item{
-  float: left;
-  margin-left: 50px;
-  margin-bottom: 45px;
+  width:  50%;
+  height: 240px;
+  position: relative;
+  color: $theme_bg;
+  font-family: $theme_serif;
+  background-color: $theme_white;
+  background-size: cover;
+  background-position: center 70%;
+  background-image:
+    url("../img/shiboritate.jpg"),
+    url("../img/yamadanishiki.jpg"),
+    url("../img/homarefuji.jpg"),
+    url("../img/omachi.jpg");
+  border: solid 1px $theme_front;
+  box-sizing: border-box;
 }
 
-.top-bottles-item__photo{
-  height: 180px;
-  width: 300px;
-  background-color: $theme_gray;
+.top-bottles__item:last-child{
+  margin-right: 0px;
+}
+
+.top-bottles-item__title{
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
 }
 
 .top-bottles-item__class{
-  font-size: 87.5%;
+}
+
+.top-bottles-item__name{
+  font-size: 175%;
+}
+
+.top-brand{
+  padding: 200px 0 90px;
+  background-image: url("../img/kura.jpg");
+  background-size: cover;;
+  background-position: center bottom;
+}
+
+.top-brand__text{
+  margin-bottom: 90px;
+  font-size: 30px;
+  font-family: $theme_serif;
+  text-align: center;
 }
 
 .top-news{
   @extend .top-copy;
   padding: 60px 0;
-  background-color: $theme_gray;
+  background: $theme_gray;
 }
 
 .top-news-list{
+}
+
+.top-link{
+  margin: 0 auto;
   overflow: hidden;
 }
 
-.top-news__item{
-  margin-left: 50px;
-  margin-bottom: 45px;
-  overflow: hidden;
+.top-link-list{
+  display: block;
 }
 
-.top-news-item__text{
-  width: 310px;
+.top-link-list__img{
+  width: 25%;
   float: left;
+  border-left: solid 1px $theme_bg;
+  border-right: solid 1px $theme_bg;
+  box-sizing: border-box;
 }
 
-.top-news-item__photo{
-  height: 180px;
-  width: 310px;
-  margin-left: 50px;
-  background-color: $theme_white;
-  float: left;
+@media screen and (max-width: $pc_small_width){
+  .top-link-list__img{
+    width: 50%;
+    border-top: solid 1px $theme_bg;
+    border-bottom: solid 1px $theme_bg;
+  }
 }
 
-.top-brand{
-  @extend .top-copy;
-}
-
-.top-brand__text{
-  @extend .top-copy__text;
+@media screen and (max-width: $pc_min_width){
+  .top-bottles__item{
+    width:  100%;
+    border-left: none;
+    border-right: none;
+  }
 }

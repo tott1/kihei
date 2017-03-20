@@ -1,14 +1,25 @@
+body {
+  background-color: $theme_bg;
+}
+
 .wrapper {
   font-family: yugothic;
   font-size: 16px;
   line-height: 1.5;
+  color: $theme_front;
   min-width: 320px;
 }
 
 .global-btn{
-  margin: 1em auto;
+  margin: 1.5em auto;
   padding: 10px 0;
   width: 240px;
-  border: solid 2px $theme_black;
+  border: solid 2px $theme_front;
   text-align: center;
+}
+
+.global-btn-invert{
+  @extend .global-btn;
+  color: $theme_bg;
+  border-color: $theme_bg;
 }

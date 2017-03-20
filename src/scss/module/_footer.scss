@@ -1,6 +1,45 @@
-.footer {
-  position: relative;
-  padding: 120px 0 30px;
-  font-size: 75%;
-  text-align: center;
+.footer{
+  max-width: 1024px;
+  margin: 100px auto;
+  overflow: hidden;
+}
+
+.footer-map{
+  height: 300px;
+  width: 60%;
+  float: left;
+}
+
+.footer-about{
+  width: 30%;
+  margin: 0 4% 0 6%;
+  float: left;
+}
+
+.footer-about__title{
+  margin: 2em 0 1em;
+  font-size: 125%;
+}
+
+.footer-about-list{
+  margin: 1em 0;
+  font-size: 87.5%;
+}
+
+.footer-copyright{
+  font-size: 68.75%;
+  margin: 4em 0;
+}
+
+@media screen and (max-width: $pc_min_width){
+  .footer-map{
+    width: 88%;
+    margin: 0 6%;
+    clear: both;
+  }
+
+  .footer-about{
+    width: 88%;
+    clear: both;
+  }
 }

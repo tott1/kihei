@@ -47,10 +47,40 @@ table {
 	border-spacing: 0;
 }
 .footer {
-  position: relative;
-  padding: 120px 0 30px;
-  font-size: 75%;
-  text-align: center; }
+  max-width: 1024px;
+  margin: 100px auto;
+  overflow: hidden; }
+
+.footer-map {
+  height: 300px;
+  width: 60%;
+  float: left; }
+
+.footer-about {
+  width: 30%;
+  margin: 0 4% 0 6%;
+  float: left; }
+
+.footer-about__title {
+  margin: 2em 0 1em;
+  font-size: 125%; }
+
+.footer-about-list {
+  margin: 1em 0;
+  font-size: 87.5%; }
+
+.footer-copyright {
+  font-size: 68.75%;
+  margin: 4em 0; }
+
+@media screen and (max-width: 800px) {
+  .footer-map {
+    width: 88%;
+    margin: 0 6%;
+    clear: both; }
+  .footer-about {
+    width: 88%;
+    clear: both; } }
 
 .gnav {
   position: fixed;
@@ -71,7 +101,7 @@ table {
 .gnav-menu__button {
   display: block;
   padding: 0.5em 1.0em;
-  color: #ccc;
+  color: #eee;
   text-decoration: none; }
 
 .gnav-toggle {
@@ -84,7 +114,7 @@ table {
 
 .gnav-toggle__icon, .gnav-open__icon--n1, .gnav-open__icon--n2, .gnav-open__icon--n3 {
   position: absolute;
-  background-color: #333;
+  background-color: #eee;
   width: 100%;
   height: 2px;
   top: 50%;
@@ -120,87 +150,132 @@ table {
 */
 .top-intro {
   position: relative;
-  height: 500px;
   background-color: #000; }
 
 .top-intro__bg {
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  background-color: #333;
-  background-position: center; }
+  height: 400px;
+  padding: 160px; }
 
 .top-intro__logo {
-  position: absolute;
-  top: 0px;
   width: 100%;
   height: 100%;
-  background-color: #999;
+  background-image: url("../img/logo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.top-copy, .top-news {
+  padding: 200px 0 90px;
+  background-image: url("../img/sake.jpg");
+  background-size: cover;
   background-position: center; }
 
-.top-copy, .top-bottles, .top-news, .top-brand {
-  width: 750px;
-  margin: 0 auto;
-  padding: 120px 0; }
-
-.top-copy__text, .top-brand__text {
-  margin: 120px 0;
+.top-copy__text {
+  margin-bottom: 90px;
   font-size: 30px;
+  font-family: serif;
   text-align: center; }
 
 .top-bottles {
-  padding: 60px 0;
-  background-color: #ccc; }
+  padding: 0 0 30px;
+  background: #eee; }
 
 .top-bottles-list {
+  margin-bottom: 60px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   overflow: hidden; }
 
 .top-bottles__item {
-  float: left;
-  margin-left: 50px;
-  margin-bottom: 45px; }
+  width: 50%;
+  height: 240px;
+  position: relative;
+  color: #000;
+  font-family: serif;
+  background-color: #fff;
+  background-size: cover;
+  background-position: center 70%;
+  background-image: url("../img/shiboritate.jpg"), url("../img/yamadanishiki.jpg"), url("../img/homarefuji.jpg"), url("../img/omachi.jpg");
+  border: solid 1px #eee;
+  box-sizing: border-box; }
 
-.top-bottles-item__photo {
-  height: 180px;
-  width: 300px;
-  background-color: #999; }
+.top-bottles__item:last-child {
+  margin-right: 0px; }
 
-.top-bottles-item__class {
-  font-size: 87.5%; }
+.top-bottles-item__title {
+  position: absolute;
+  bottom: 10px;
+  left: 20px; }
+
+.top-bottles-item__name {
+  font-size: 175%; }
+
+.top-brand {
+  padding: 200px 0 90px;
+  background-image: url("../img/kura.jpg");
+  background-size: cover;
+  background-position: center bottom; }
+
+.top-brand__text {
+  margin-bottom: 90px;
+  font-size: 30px;
+  font-family: serif;
+  text-align: center; }
 
 .top-news {
   padding: 60px 0;
-  background-color: #999; }
+  background: #999; }
 
-.top-news-list {
+.top-link {
+  margin: 0 auto;
   overflow: hidden; }
 
-.top-news__item {
-  margin-left: 50px;
-  margin-bottom: 45px;
-  overflow: hidden; }
+.top-link-list {
+  display: block; }
 
-.top-news-item__text {
-  width: 310px;
-  float: left; }
+.top-link-list__img {
+  width: 25%;
+  float: left;
+  border-left: solid 1px #000;
+  border-right: solid 1px #000;
+  box-sizing: border-box; }
 
-.top-news-item__photo {
-  height: 180px;
-  width: 310px;
-  margin-left: 50px;
-  background-color: #ccc;
-  float: left; }
+@media screen and (max-width: 1024px) {
+  .top-link-list__img {
+    width: 50%;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000; } }
+
+@media screen and (max-width: 800px) {
+  .top-bottles__item {
+    width: 100%;
+    border-left: none;
+    border-right: none; } }
+
+body {
+  background-color: #000; }
 
 .wrapper {
   font-family: yugothic;
   font-size: 16px;
   line-height: 1.5;
+  color: #eee;
   min-width: 320px; }
 
-.global-btn {
-  margin: 1em auto;
+.global-btn, .global-btn-invert {
+  margin: 1.5em auto;
   padding: 10px 0;
   width: 240px;
-  border: solid 2px #333;
+  border: solid 2px #eee;
   text-align: center; }
+
+.global-btn-invert {
+  color: #000;
+  border-color: #000; }
