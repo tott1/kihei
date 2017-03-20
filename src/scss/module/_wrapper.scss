@@ -2,6 +2,11 @@ body {
   background-color: $theme_bg;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .wrapper {
   font-family: yugothic;
   font-size: 16px;
@@ -18,8 +23,72 @@ body {
   text-align: center;
 }
 
+.global-btn a, global-btn-invert a{
+  display: block;
+}
+
+.global-btn:hover{
+  background-color: rgba($theme_front, 0.3);
+}
+
 .global-btn-invert{
   @extend .global-btn;
   color: $theme_bg;
   border-color: $theme_bg;
+}
+
+.global-btn-invert:hover{
+  background-color: rgba($theme_white, 0.3);
+}
+
+.page .global-btn-invert{
+  margin: 4em auto;
+}
+
+.title{
+  margin: 90px auto;
+  text-align: center;
+  font-family: $theme_serif;
+  font-size: 200%;
+}
+
+.page{
+  max-width: 864px;
+  margin: 0 auto;
+  padding: 60px 80px;
+  background-color: $theme_front;
+  color: $theme_bg;
+}
+
+.page h2{
+  margin: 2em auto;
+  font-family: $theme-serif;
+  font-size: 150%;
+}
+
+.page h3{
+  margin: 3em auto 1em;
+  font-family: $theme_serif;
+  font-size: 125%;
+}
+
+.page p{
+  margin: 1.5em auto;
+  font-size: 87.5%;
+}
+
+@media screen and (min-width: $pc_min_width){
+  .pc-hidden{
+    display: none;
+  }
+}
+
+@media screen and (max-width: $pc_min_width){
+  .page{
+    padding: 20px;
+  }
+
+  .sp-hidden{
+    display: none;
+  }
 }

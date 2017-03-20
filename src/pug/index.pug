@@ -17,9 +17,14 @@ block ContentBlock
 
     section.top-copy
       .top-copy__text
-        | 純米酒のこだわりは、素材のこだわり
+        | 純米酒のこだわりは
+        span.sp-hidden
+          | 、
+        br.pc-hidden
+        | 素材のこだわり
       p.global-btn
-        | 喜平の酒づくり
+        a(href="/brew.html")
+          | 喜平の酒づくり
 
     section.top-bottles
       ul.top-bottles-list
@@ -56,9 +61,14 @@ block ContentBlock
 
     section.top-brand
       .top-brand__text
-        | 創業100年を迎え、新たなる挑戦へ
+        | 創業100年を迎え
+        span.sp-hidden
+          | 、
+        br.pc-hidden
+        | 新たなる挑戦へ
       p.global-btn
-        | 喜平の歴史
+        a(href="history.html")
+          | 喜平の歴史
 
     //-
       section.top-news
@@ -77,12 +87,16 @@ block ContentBlock
     section.top-link
       ul.top-link-list
         li.top-link-list__item
-          img.top-link-list__img(src="../img/hiraki.png")
+          a(href="http://www.sakehiraki.com" target="_blank")
+            img.top-link-list__img(src="/img/hiraki.png")
         li.top-link-list__item
-          img.top-link-list__img(src="../img/hirakiya.png")
+          a(href="http://www.hirakiya.net/" target="_blank")
+            img.top-link-list__img(src="/img/hirakiya.png")
         li.top-link-list__item
-          img.top-link-list__img(src="../img/okayama.png")
+          a(href="http://www.hirakishuzo.co.jp/" target="_blank")
+            img.top-link-list__img(src="/img/okayama.png")
         li.top-link-list__item
-          img.top-link-list__img(src="../img/hamamatsu.png")
+          a(href="http://hamamatsushuzo.com" target="_blank")
+            img.top-link-list__img(src="/img/hamamatsu.png")
 
   include ./module/common/_footer

@@ -16,6 +16,7 @@
   background-size: contain;
   background-position: center;
 	background-repeat: no-repeat;
+  animation: fadeIn 2s ease-in-out 0s 1 normal;
 }
 
 .top-copy{
@@ -27,7 +28,7 @@
 
 .top-copy__text{
   margin-bottom: 90px;
-  font-size: 30px;
+  font-size: 200%;
   font-family: $theme_serif;
   text-align: center;
 }
@@ -106,6 +107,11 @@
 .top-link{
   margin: 0 auto;
   overflow: hidden;
+  background-color: $theme_white;
+}
+
+.top-link img:hover{
+  opacity: 0.6;
 }
 
 .top-link-list{
@@ -134,4 +140,9 @@
     border-left: none;
     border-right: none;
   }
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
 }
