@@ -10254,11 +10254,22 @@ var _jquery2 = _interopRequireDefault(_jquery);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var sample = new _Sample2.default({
-    name: 'world'
+  name: 'world'
 });
 
 (0, _jquery2.default)('.wrapper').on('click', function () {
-    console.log('hello, ' + sample.name + '.');
+  console.log('hello, ' + sample.name + '.');
+});
+
+(0, _jquery2.default)(function () {
+  var map = (0, _jquery2.default)('iframe');
+  map.css('pointer-events', 'none');
+  (0, _jquery2.default)('#access').click(function () {
+    map.css('pointer-events', 'auto');
+  });
+  map.mouseout(function () {
+    map.css('pointer-events', 'none');
+  });
 });
 
 },{"./lib/Sample":2,"jquery":1}]},{},[3]);
