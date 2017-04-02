@@ -46,10 +46,21 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.bottles-page__img {
+  height: 200px;
+  background-color: #000;
+  background-size: cover;
+  margin: 0 auto; }
+
+.bottles-img__xxx {
+  background-image: url("../img/.jpg");
+  background-position: center; }
+
 .brew-page__img {
   height: 200px;
   background-color: #000;
-  background-size: cover; }
+  background-size: cover;
+  margin: 0 auto; }
 
 .brew-img__river {
   background-image: url("../img/mtfuji.jpg");

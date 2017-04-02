@@ -1,0 +1,57 @@
+extends /layout/_DefaultLayout
+
+prepend ConfigBlock
+  - page_name = ''
+
+//- append StylesheetBlock
+
+//- append JavascriptBlock
+
+block ContentBlock
+  include ./module/common/_gnav
+
+  .bottles
+    section.title
+      h1 商品一覧
+
+    section.page
+      h2 喜平 静岡蔵謹醸
+
+      ul.bottles-page-list
+        li.bottles-page__item
+          h3 純米 しぼりたて
+          p.bottles-page-item__img.bottles-img__shiboritate
+          div.bottles-page-item__description
+            p 今年の酒造りを開始いたしました。今年度の新米での初仕込みは「五百万石」という酒造好適米を使用した淡麗に仕上がりました。口に含むと果実のような華やかさが広がります。
+            p おかげさまで静岡平喜酒造も今年で4度目の酒造りを迎えました。年々上がる品質をしぼりたてのフレッシュな味わいと共にご堪能ください。
+          ul.bottles-page-item__spec
+            li 原料米：五百万石 (100%)
+            li 精米歩合：60%
+          ul.bottles-page-item__size
+            li 容量：1,800ml / 720ml
+          ul.bottles-page-item__status
+            li.limited 期間限定
+            li.available 酒販店にて販売中
+            li.unavailable 蔵内完売
+
+        li.bottles-page-item__size
+          h3 限定謹醸 雄町
+          p.bottles-page-item__img.bottles-img__limited-omachi
+          div.bottles-page-item__description
+            p 岡山の代表品種『雄町米』を静岡の清流安倍川の伏流水で仕込みました。
+            p 杜氏久谷が故郷、岡山で培った雄町米に対する経験を活かし特有の柔らかな甘みを引き出しつつ、静岡の水からなる滑らかな飲み心地が合わさった喜平ならではのこだわりの純米酒。仕込みは総米200kg単位の小仕込み製法による限定酒。
+            p 喜平ファンの方は岡山の雄町酒情報もCheck！
+          ul.bottles-page-item__spec
+            li 原料米：雄町米 (100%)
+            li 精米歩合：60%
+          ul.bottles-page-item__size
+            li 容量：1,800ml / 720ml
+          ul.bottles-page-item__status
+            li.limited 期間限定
+            li.unavailable 完売
+
+      .global-btn-invert
+        a(href="../")
+          | 戻る
+
+  include ./module/common/_footer
